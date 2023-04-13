@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 15%;
+}
+
+#chk {
+    display: none;
+}
+
+.switch {
+    position: relative;
+    background-color: blue;
+    width: 120px;
+    height: 60px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.slider {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    transition: all .5s ease-in-out;
+}
+
+#chk:checked ~ .switch {
+    background-color: aqua;
+}
+
+#chk:checked ~ .switch .slider {
+    transform: translateX(60px);
+    background-color: blue;
+}

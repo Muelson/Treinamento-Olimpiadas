@@ -1,0 +1,61 @@
+.Loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15%;
+    position: relative;
+    rotate: 45deg;
+    padding: 0 auto;
+}
+
+.dot {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px 5px;
+    animation: move 2s infinite;
+}
+
+.dot1 {
+    background-color: #19A68C;
+    animation-delay: 1s;
+}
+
+.dot2 {
+    background-color: #F63D3A;
+    animation-delay: 1.5s;
+}
+
+.dot3 {
+    background-color: #FDA543;
+    animation-delay: 2s;
+}
+
+.dot4 {
+    background-color: #193B48;
+    animation-delay: 2.5s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0,-110%);
+    }
+
+    25% {
+        transform: translate(110%,0);
+    }
+
+    50% {
+        transform: translate(0, 110%);
+    }
+
+    75% {
+        transform: translate(-110%,0);
+    }
+
+    100% {
+        transform: translate(0,-110%);
+    }
+}
